@@ -4,10 +4,14 @@
    box-sizing: border-box;
 }
 
+
+
+
 html{
-    font-size: 62,5%;
+    font-size: 62.5%;
 
 }
+
 
 body {
     font-family: " Open Sans", "sans-serif";
@@ -41,14 +45,14 @@ h1 {
 }
 
 h2 {
-  color: #007AFF;     /* Azul espacial (acento Apple) */
+  color: #D0D0D5;     /* Gris metálico */
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.2;
 }
 .btn {
-  background-color: #007AFF;  /* Azul espacial */
-  color: #FFFFFF;             /* Texto blanco */
+  background-color: #D0D0D5;  /* Gris metálico */
+  color: #0D0D0D;             /* Texto oscuro */
   border: none;
   border-radius: 10px;
   padding: 12px 24px;
@@ -94,31 +98,25 @@ footer {
 
 .logo span {
    font-weight: 700;
-   font-family: "SF Pro Display", "Inter", sans-serif;
+   font-family: "Open Sans", sans-serif;
    letter-spacing: 0.5px;
 }
 
 .logo span {
-    color: #0A84FF; /* Azul Apple */
-}
-
-.logo:hover {
-    color: #0A84FF;
+    color: #D0D0D5; /* Gris metálico */
 }
 
 
 .header-nav {
     margin-right: 2rem;
 }
-.header-nav ul li a:hover {
-    color: #0A84FF;
-}
+
 .header-nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 footer nav ul li {
@@ -126,7 +124,7 @@ footer nav ul li {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem;    
+    margin: 2rem 0;    
     padding: 1rem;
 }
 
@@ -165,7 +163,7 @@ footer nav ul li {
     background-color: #FFFFFF;  /* Blanco puro para resaltar el producto */
     color: #1C1C1E;             /* Negro suave para el texto */
 
-    width: 40rem;
+    width: 30rem;
     padding-bottom: 2rem;
     border-radius: 1rem;
 
@@ -175,10 +173,14 @@ footer nav ul li {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .tarjeta-prod img {
     width: 100%;
+    max-width: 30rem;
+    height: auto;
 }
 
 /* ----------------------------------*/
