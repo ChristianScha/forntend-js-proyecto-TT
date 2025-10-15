@@ -33,3 +33,190 @@ main{
     align-items: center;
 }
 
+h1 {
+  color: #A1A1A6;     /* Gris Claro */ 
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;  
+}
+
+h2 {
+  color: #007AFF;     /* Azul espacial (acento Apple) */
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.btn {
+  background-color: #007AFF;  /* Azul espacial */
+  color: #FFFFFF;             /* Texto blanco */
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;  
+}
+
+header, 
+footer {
+  background-color: #1C1C1E;  /* Gris oscuro */
+  color: #F5F5F7;             /* Texto blanco humo */
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #2C2C2E;
+  border-bottom: 1px solid #2C2C2E;
+  padding: 20px 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.div-log{
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo, 
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+footer nav ul li {
+    padding: 1rem;
+}
+
+
+/* ----------------------------------*/
+/*      Trabajamos en la HOME        */
+/* ----------------------------------*/
+
+
+.titulo-home {
+    margin: 3rem 0;
+}
+
+.titulo-productos {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.parrafo {
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-productos {
+   display: flex;
+  /* flex-direction: column; */
+   justify-content: center;
+ /*  align-items: center; */
+   flex-wrap: wrap;
+   gap: 2rem;
+}
+
+.tarjeta-prod {
+    background-color: #FFFFFF;  /* Blanco puro para resaltar el producto */
+    color: #1C1C1E;             /* Negro suave para el texto */
+
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tarjeta-prod img {
+    width: 100%;
+}
+
+/* ----------------------------------*/
+/*         Area de Contacto          */
+/* ----------------------------------*/
+
+.titulo-contacto {
+    margin: 2rem 0;
+}
+
+.form-contacto {
+  /* Estilo formulario de contacto (modo oscuro elegante) */
+  background-color: #1C1C1E;   /* Gris oscuro, sutil contraste con el fondo general */
+  color: #F5F5F7;              /* Texto blanco humo, legible y limpio */
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.06);  /* Sombra profunda, elegante y suave */
+  border: 1px solid #2C2C2E;
+  
+  width: 100%;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px #2C2C2E;
+    margin-bottom: 3rem;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ----------------------------------*/
+/*             Media                 */
+/* ----------------------------------*/
+
+@media (max-width: 768px) {
+ header,
+ footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;  
+ }
+ 
+ header .div-log,
+ .header-nav {
+    margin: 0;
+ }  
+ 
+ .contenedor-productos {
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+ } 
+}
